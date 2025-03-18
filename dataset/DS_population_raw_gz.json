@@ -1,0 +1,29 @@
+{
+	"name": "DS_population_raw_gz",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_ABLB_stcovidreportingdev001",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "Populate"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "population_by_age.tsv.gz",
+				"container": "population"
+			},
+			"columnDelimiter": "\t",
+			"compressionCodec": "gzip",
+			"compressionLevel": "Optimal",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

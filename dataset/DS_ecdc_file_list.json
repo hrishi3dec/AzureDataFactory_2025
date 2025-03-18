@@ -1,0 +1,23 @@
+{
+	"name": "DS_ecdc_file_list",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_ABLB_stcovidreportingdev001",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "ECDC"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "ecdc_file_list_for_2_files.json",
+				"container": "configs"
+			}
+		},
+		"schema": {}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

@@ -1,0 +1,9 @@
+{
+	"name": "adf-covid-reporting-dev-patgiri-001",
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "24ea379c-b8ea-4edb-b272-a9360240228b",
+		"tenantId": "a7227b08-db4c-4fd9-a022-aa034dc1e21b"
+	}
+}

@@ -1,0 +1,24 @@
+{
+	"name": "TR_StotageEvent_populationData_arrived",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "PL_execute_population_pipelines",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/population/blobs/population_by_age.tsv.gz",
+			"ignoreEmptyBlobs": true,
+			"scope": "/subscriptions/7dd0f217-2694-4ccb-9f4e-dd03403ad518/resourceGroups/rg-covid-project-dev-patgiri-001/providers/Microsoft.Storage/storageAccounts/stcovidreportingdev001",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}

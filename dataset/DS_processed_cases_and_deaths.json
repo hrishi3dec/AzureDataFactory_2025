@@ -1,0 +1,27 @@
+{
+	"name": "DS_processed_cases_and_deaths",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_ADLS_dlscovidreportingdev001",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "DataFlow/DataFlow-CasesAndDeaths-Transformation 1"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "ecdc/cases_deaths",
+				"fileSystem": "processed"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

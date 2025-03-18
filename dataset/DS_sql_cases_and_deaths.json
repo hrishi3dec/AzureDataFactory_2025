@@ -1,0 +1,20 @@
+{
+	"name": "DS_sql_cases_and_deaths",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_sql_covid_db",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "Sqlize"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "covid_reporting",
+			"table": "cases_and_deaths"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
