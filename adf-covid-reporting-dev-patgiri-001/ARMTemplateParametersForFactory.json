@@ -1,0 +1,36 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "adf-covid-reporting-dev-patgiri-001"
+		},
+		"LS_ABLB_stcovidreportingdev001_connectionString": {
+			"value": ""
+		},
+		"LS_ADLS_dlscovidreportingdev001_accountKey": {
+			"value": ""
+		},
+		"LS_Databricks_covid_reporting_accessToken": {
+			"value": ""
+		},
+		"LS_sql_covid_db_password": {
+			"value": ""
+		},
+		"LS_ADLS_dlscovidreportingdev001_properties_typeProperties_url": {
+			"value": "https://dlscovidreportingdev001.dfs.core.windows.net/"
+		},
+		"LS_http_open_data_ecdc_properties_typeProperties_url": {
+			"value": "@{linkedService().baseURL}"
+		},
+		"LS_sql_covid_db_properties_typeProperties_server": {
+			"value": "covid-reporting-svr-patgiri.database.windows.net"
+		},
+		"LS_sql_covid_db_properties_typeProperties_database": {
+			"value": "covid-db"
+		},
+		"LS_sql_covid_db_properties_typeProperties_userName": {
+			"value": "adm"
+		}
+	}
+}
